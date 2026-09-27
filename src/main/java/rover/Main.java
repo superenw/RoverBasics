@@ -32,20 +32,20 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("=== RoverBasics ===");
 
-        // ── MONDAY ──────────────────────────────────────────────────────────
+        // ── MONDAY ─────────────────────────────────────────
         step1Variables();
-        // step2Battery();
-        // step3Strings();
-        // step4Input();
+        step2Battery();
+        step3Strings();
+        step4Input();
 
-        // ── TUESDAY ─────────────────────────────────────────────────────────
+        // ── TUESDAY ────────────────────────────────────────
         // step5FirstClass();
         // step6TwoConstructors();
         // step7Composition();
         // step8ArrayOfObjects();
         // step9Methods();
 
-        // ── PART 2 · STRETCH ────────────────────────────────────────────────
+        // ── PART 2 · STRETCH ───────────────────────────────
         // stretch();
     }
 
@@ -59,7 +59,8 @@ public class Main {
         System.out.println("--- Step 1: what a rover is made of ---");
 
         // ▼ README · Step 1. Type it below this line.
-
+// step3Strings();
+// step4Input();
     }
 
 
@@ -73,7 +74,29 @@ public class Main {
 
         // ▼ README · Step 2.
 
+        int capacity = 300;
+        int charge = 150;
+
+        int wrong = charge / capacity * 100;
+        int right = charge * 100 / capacity;
+        double exact = (double) charge * 100 / capacity;
+
+        System.out.println("capacity = " + capacity + ", charge = " + charge);
+        System.out.println("wrong = " + wrong + "%");
+        System.out.println("right = " + right + "%");
+        System.out.println("exact = " + exact + "%");
+
+        int smallCapacity = 3;
+        int smallCharge = 2;
+
+        int twoThirds = smallCharge * 100 / smallCapacity;
+        double twoThirdsExact = (double) smallCharge * 100 / smallCapacity;
+
+        System.out.println("2 of 3 as an int    = " + twoThirds + "%");
+        System.out.println("2 of 3 as a double  = " + twoThirdsExact + "%");
+        System.out.println("Java did not round. It chopped.");
     }
+// step4Input();    }
 
 
     // ════════════════════════════════════════════════════════════════════════
